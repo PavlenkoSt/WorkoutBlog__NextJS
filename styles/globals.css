@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav a{
+  color: #eee;
+  transition: all ease .2s;
+}
+
+nav a:hover{
+  color: #fff;
+}
