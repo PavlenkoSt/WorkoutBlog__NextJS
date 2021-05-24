@@ -1,5 +1,5 @@
 module.exports = {
-    images: {
-      domains: ['st2.depositphotos.com'],
-    },
-  }
+  images: {
+    domains: ['st2.depositphotos.com', 'workout.su'],
+  },
+}
