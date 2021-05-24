@@ -15,11 +15,19 @@ a {
   box-sizing: border-box;
 }
 
-nav a{
-  color: #eee;
-  transition: all ease .2s;
+h2{
+  margin: 0;
+  padding: 0;
 }
 
-nav a:hover{
-  color: #fff;
+nav {
+  a{
+    color: #eee;
+    transition: all ease .2s;
+    &:hover{
+      color: #fff;
+    }
+  }
+  
 }
+

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import A from "./A";
 import Image from 'next/image';
+import Social from "./Social";
 
 export default function MainLayout({ children, title }){
     return (
@@ -29,6 +30,11 @@ export default function MainLayout({ children, title }){
                     </div>
                 </div>
             </header>
+            <div className='subheader'>
+                <div className='container'>
+                    <Social/>
+                </div>
+            </div>
             <main>
                 <div className='container'>
                     {children}
@@ -45,8 +51,17 @@ export default function MainLayout({ children, title }){
                         width: 100%;
                         height: 60px;
                         background-color: #333333;
-                        position: relative;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
                         box-shadow: 0 2px 1px #333;
+                    }
+
+                    .subheader{
+                        width: 100%;
+                        height: 40px;
+                        background-color: red;
+                        margin-top: 60px;
                     }
 
                     .flex{
