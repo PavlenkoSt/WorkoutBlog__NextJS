@@ -10,6 +10,8 @@ export default function MainLayout({ children, title }){
                 <title>{title} | Workout Life</title>
                 <meta name="description" content="best concentration of information about workout" />
                 <meta name="keywords" content="workout,calisthenics,gym,sport,fithes,workout24" />
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
@@ -55,12 +57,12 @@ export default function MainLayout({ children, title }){
                         top: 0;
                         left: 0;
                         box-shadow: 0 2px 1px #333;
+                        z-index: 1000;
                     }
 
                     .subheader{
                         width: 100%;
                         height: 40px;
-                        background-color: red;
                         margin-top: 60px;
                     }
 

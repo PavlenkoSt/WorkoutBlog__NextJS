@@ -3,4 +3,48 @@
     color: #333;
     font-size: 20px;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    margin-bottom: 10px;
+}
+
+.content{
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.block{
+    margin-bottom: 20px;
+}
+
+.title{
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.text{
+    color: #333;
+    font-size: 14px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.headText{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+    width: 60%;
+    padding: 20px;
+    p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
