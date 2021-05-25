@@ -3,9 +3,14 @@ import A from "../common/A";
 import Image from 'next/image';
 import Social from "../Social";
 import Link from "next/link";
-import s from '../../styles/MainLayout.module.scss'
+import s from '../../styles/MainLayout.module.scss';
+import {useRouter} from 'next/router'
 
 export default function MainLayout({ children, title }){
+
+    const router = useRouter()
+    const pathName = router.pathname
+
     return (
         <>
             <Head>
@@ -17,25 +22,23 @@ export default function MainLayout({ children, title }){
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className={s.header}>
-                <div className={s.container}>
-                    <div className={s.flex}>
-                        <nav className={s.nav}>
-                            <A text='Главная' href='/' />
-                            <A text='Статьи' href='/articles' />
-                            <A text='Программы' href='/programs' />
-                        </nav>
-                        <Link href='/'>
-                            <a className={s.logoWrapper}>
-                                <Image
-                                    src='/logo.png'
-                                    alt='Workout'
-                                    width={90}
-                                    height={60}
-                                    className='logo'
-                                />
-                            </a>
-                        </Link>
-                    </div>
+                <div className={s.flex}>
+                    <nav className={s.nav}>
+                        <A text='Главная' href='/' active={pathName === '/'} />
+                        <A text='Статьи' href='/articles' active={pathName === '/articles'} />
+                        <A text='Программы' href='/programs' active={pathName === '/programs'} />
+                    </nav>
+                    <Link href='/'>
+                        <a className={s.logoWrapper}>
+                            <Image
+                                src='/logo.png'
+                                alt='Workout'
+                                width={90}
+                                height={60}
+                                className='logo'
+                            />
+                        </a>
+                    </Link>
                 </div>
             </header>
             <div className={s.subheader}>
