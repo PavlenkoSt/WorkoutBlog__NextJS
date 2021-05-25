@@ -4,6 +4,24 @@ import MainLayout from "../../components/layouts/MainLayout";
 import s from '../../styles/ArticlePage.module.scss'
 
 export default function ArticleId({article}){
+    console.log(article);
+    if(!article.content){
+        return (
+            <MainLayout title='Ошибка' >
+                <div className={s.headerLine}>
+                    <h2 className={s.header}>Статьи по данному адресу не найдено!</h2>
+                </div>
+                <div className={s.noArtImg}>
+                    <Image
+                        width={500}
+                        height={400}
+                        alt='404 Страница не найдена'
+                        src='/404.webp'
+                    />
+                </div>
+            </MainLayout>
+        )
+    }
 
     const blocks = article.content.blocks.map(block => <ArticleBlock 
         key={block.id}
@@ -46,7 +64,7 @@ export default function ArticleId({article}){
 
 export async function getServerSideProps({ query }) {
     const responce = await fetch(`http://localhost:3004/articles/${query.id}`)
-    const article = await responce.json()
+    let article = await responce.json()
 
     return {
       props: {
