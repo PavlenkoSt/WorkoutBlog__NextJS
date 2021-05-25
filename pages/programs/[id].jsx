@@ -1,9 +1,9 @@
 import MainLayout from "../../components/layouts/MainLayout";
 
-export default function Programs(){
+export default function ProgramId(){
     return (
         <MainLayout>
-            programs page
+            
         </MainLayout>
     )
 }
