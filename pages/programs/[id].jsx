@@ -1,6 +1,7 @@
 import Image from "next/image"
 import MainLayout from "../../components/layouts/MainLayout"
 import s from '../../styles/ProgamPage.module.scss'
+import ProgramBlock from '../../components/common/ProgramBlock'
 
 export default function ProgramId({ program }){
     if(!program.content){
@@ -19,6 +20,12 @@ export default function ProgramId({ program }){
         )
     }
 
+    const blocks = program.content.map(block => <ProgramBlock 
+        key={block.id}
+        header={block.header}
+        list={block.list}
+    />)
+
     return (
         <MainLayout title={program.title} >
             <h2 className={s.header}>{program.title}</h2>
@@ -32,9 +39,12 @@ export default function ProgramId({ program }){
                     />
                     <div className={s.startLineText}>{program.start}</div>
                 </div>
-                {/* <div className={s.blockContent}>
+                <div>
                     {blocks}
-                </div> */}
+                </div>
+                <div className={s.end}>
+                    {program.end}
+                </div>
             </div>
         </MainLayout>
     )
