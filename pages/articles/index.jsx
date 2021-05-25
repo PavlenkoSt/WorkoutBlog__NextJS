@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Article from "../../components/common/Article";
 import MainLayout from "../../components/layouts/MainLayout";
 import s from '../../styles/Articles.module.scss'
@@ -28,10 +27,9 @@ export default function Articles({articles}){
 export async function getServerSideProps(context) {
     const responce = await fetch('http://localhost:3004/articles')
     const articles = await responce.json()
-
     return {
       props: {
         articles
       }, 
     }
-  }
+}
