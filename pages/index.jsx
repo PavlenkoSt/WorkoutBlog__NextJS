@@ -1,5 +1,5 @@
 import MainArticle from '../components/MainArticle'
-import MainLayout from '../components/MainLayout'
+import MainLayout from '../components/layouts/MainLayout'
 import s from '../styles/Home.module.scss'
 
 export default function Home() {

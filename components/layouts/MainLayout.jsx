@@ -1,7 +1,7 @@
 import Head from "next/head";
-import A from "./A";
+import A from "../common/A";
 import Image from 'next/image';
-import Social from "./Social";
+import Social from "../Social";
 import Link from "next/link";
 
 export default function MainLayout({ children, title }){
