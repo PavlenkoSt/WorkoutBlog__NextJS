@@ -1,4 +1,4 @@
-import MainLayout from "../../components/MainLayout";
+import MainLayout from "../../components/layouts/MainLayout";
 
 export default function ProgramId(){
     return (

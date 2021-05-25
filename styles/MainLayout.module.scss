@@ -1,0 +1,53 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #2a2f37;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 1px #333;
+    z-index: 1000;
+}
+
+.logoWrapper{
+    width: 90px;
+    height: 60px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.subheader{
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    aling-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.main{
+    padding-top: 10px;
+    min-height: calc(100vh - 120px);
+}
+
+.container{
+    padding: 0 15px;
+    height: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background: url(https://workout.su/img/footer.png) center no-repeat;
+    background-size: cover;
+}
