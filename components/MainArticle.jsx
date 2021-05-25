@@ -8,7 +8,7 @@ export default function MainArticle(){
             <div className={s.content}>
                 <div className={s.head}>
                     <Image
-                        src={'https://ss.sport-express.ru/userfiles/materials/127/1274939/large.jpg'}
+                        src={'/main.jpg'}
                         alt='workout'
                         width={600}
                         height={350}
@@ -23,6 +23,7 @@ export default function MainArticle(){
                         </p>
                     </div>
                 </div>
+                    
                 <div className={s.block}>
                     <h3 className={s.title}>Отсутствие затрат</h3>
                     <p className={s.text}>Причем это отнюдь не означает, что вы не вкладываетесь в свое физическое совершенствование. Вы едва ли потратите ползарплаты на занятия воркаутом. Все, что вам понадобится, это удобная спортивная одежда и кроссовки. Никаких абонементов и любых других финансовых вложений. Вышли на улицу в спортивной форме – готовы к тренировке!</p>

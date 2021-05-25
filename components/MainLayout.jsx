@@ -2,6 +2,7 @@ import Head from "next/head";
 import A from "./A";
 import Image from 'next/image';
 import Social from "./Social";
+import Link from "next/link";
 
 export default function MainLayout({ children, title }){
     return (
@@ -22,13 +23,17 @@ export default function MainLayout({ children, title }){
                             <A text='Статьи' href='/articles' />
                             <A text='Программы' href='/programs' />
                         </nav>
-                        <Image
-                            src='https://st2.depositphotos.com/2465171/7182/v/600/depositphotos_71822329-stock-illustration-different-sports-and-street-workout.jpg'
-                            alt='Workout'
-                            width={60}
-                            height={60}
-                            className='logo'
-                        />
+                        <Link href='/'>
+                            <a className='logo-wrapper'>
+                                <Image
+                                    src='/logo.png'
+                                    alt='Workout'
+                                    width={90}
+                                    height={60}
+                                    className='logo'
+                                />
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </header>
@@ -58,6 +63,13 @@ export default function MainLayout({ children, title }){
                         left: 0;
                         box-shadow: 0 2px 1px #333;
                         z-index: 1000;
+                    }
+
+                    .logo-wrapper{
+                        width: 90px;
+                        height: 60px;
+                        background-color: #fff;
+                        overflow: hidden;
                     }
 
                     .subheader{
