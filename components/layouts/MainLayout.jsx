@@ -5,6 +5,7 @@ import Social from "../Social";
 import Link from "next/link";
 import s from '../../styles/MainLayout.module.scss';
 import {useRouter} from 'next/router'
+import SocialItem from "../parts/SocialItem";
 
 export default function MainLayout({ children, title }){
 
@@ -53,7 +54,14 @@ export default function MainLayout({ children, title }){
             </main>
             <footer className={s.footer}>    
                 <div className={s.container}>
-                    
+                    <div className={s.footerSocial}>
+                        <SocialItem iconPath='/icons/youtube.svg' href='https://youtube.com' size={25} />
+                        <SocialItem iconPath='/icons/facebook.svg' href='https://facebook.com' size={25} />
+                        <SocialItem iconPath='/icons/instagram.svg' href='https://instagram.com' size={25} />
+                        <SocialItem iconPath='/icons/telegram.svg' href='https://telegram.com' size={25} />
+                        <SocialItem iconPath='/icons/twitter.svg' href='https://twitter.com' size={25} />
+                        <SocialItem iconPath='/icons/vk.svg' href='https://vk.com' size={25} />
+                    </div>
                 </div>
             </footer>
         </>
