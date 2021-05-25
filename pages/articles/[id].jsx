@@ -12,8 +12,11 @@ export default function ArticleId({article}){
     />)
     
     return (
-        <MainLayout title='Статья'>
-            <h2 className={s.header}>{article.title}</h2>
+        <MainLayout title={article.title}>
+            <div className={s.headerLine}>
+                <h2 className={s.header}>{article.title}</h2>
+                <div className={s.date}>{article.date}</div>
+            </div>
             <div className={s.content}>
                 <div className={s.startLine}>
                     <Image
