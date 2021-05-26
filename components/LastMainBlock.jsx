@@ -1,5 +1,6 @@
 import s from '../styles/LastMainBlock.module.scss'
 import ArticlesListMain from './common/ArticlesListMain'
+import ProgramsListMain from './common/ProgramsListMain'
 
 
 export default function LastMainBlock({ articles, programs }){
@@ -12,6 +13,13 @@ export default function LastMainBlock({ articles, programs }){
         date={article.date}
     />)
 
+    const programsList = programs.map(program => <ProgramsListMain 
+        key={program.id}
+        id={program.id} 
+        title={program.title}
+        photo={program.photo}
+    />)
+
     return (
         <div className={s.last}>
             <div className={s.articles}> 
@@ -22,7 +30,9 @@ export default function LastMainBlock({ articles, programs }){
             </div>
             <div className={s.programs}> 
                 <h3 className={s.title}>Последние программы</h3>
-                
+                <div>
+                    {programsList}
+                </div>
             </div>
         </div>
     )
