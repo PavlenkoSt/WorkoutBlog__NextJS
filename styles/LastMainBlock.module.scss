@@ -1,0 +1,16 @@
+.last{
+    display: flex;
+    color: #333;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.articles, .programs{
+    width: 50%;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}

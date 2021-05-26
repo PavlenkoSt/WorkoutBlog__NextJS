@@ -1,0 +1,34 @@
+.item{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(194, 194, 194);
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:hover{
+        border: 1px solid rgba(74, 189, 255, 0.658);
+        & .title{
+            color: rgb(0, 109, 173);
+        }
+    }
+}
+
+.info{
+    width: 70%;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 10px;
+    color: rgb(124, 124, 124);
+    align-self: flex-end;
+}
