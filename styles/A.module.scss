@@ -8,4 +8,7 @@
     &:hover{
         background-color: #20c7ff41;
     }
+    @media(max-width: 550px){
+        width: 100%;
+    }
 }

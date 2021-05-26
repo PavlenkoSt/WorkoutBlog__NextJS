@@ -15,6 +15,9 @@
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0 0px 2px #333;
+    @media(max-width: 550px){
+        display: none;
+    }
 }
 
 .subheader{
@@ -34,6 +37,10 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    @media(max-width: 550px){
+        justify-content: space-around;
+        width: 100%;
+    }
 }
 
 .main{
@@ -57,3 +64,4 @@
     display: flex;
     align-items: center;
 }
+
