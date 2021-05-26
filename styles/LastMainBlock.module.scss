@@ -3,10 +3,16 @@
     color: #333;
     gap: 20px;
     margin-bottom: 40px;
+    @media(max-width: 950px){
+        flex-direction: column;
+    }
 }
 
 .articles, .programs{
     width: 50%;
+    @media(max-width: 950px){
+        width: 100%;
+    }
 }
 
 .title{
