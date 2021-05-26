@@ -6,7 +6,7 @@ export default function Article({ title, date, photo, id, likes }){
     return (
         <Link href={`/articles/${id}`}>
             <a className={s.article}>
-                <div>
+                <div className={s.main}>
                     <Image
                         width={600}
                         height={350}
