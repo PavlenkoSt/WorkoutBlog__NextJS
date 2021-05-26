@@ -51,6 +51,9 @@
 .container{
     padding: 0 15px;
     height: 100%;
+    @media(max-width: 550px){
+        padding: 0 5px;
+    }
 }
 
 .footer{
