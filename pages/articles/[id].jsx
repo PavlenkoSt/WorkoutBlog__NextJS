@@ -4,7 +4,6 @@ import MainLayout from "../../components/layouts/MainLayout";
 import s from '../../styles/ArticlePage.module.scss'
 
 export default function ArticleId({article}){
-    console.log(article);
     if(!article.content){
         return (
             <MainLayout title='Ошибка' >
