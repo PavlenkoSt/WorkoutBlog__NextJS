@@ -8,4 +8,10 @@
 .list{
     color: #333;
     font-size: 14px;
+    @media(max-width: 550px){
+        padding-left: 20px;
+        & li{
+            margin-top: 5px;
+        }
+    }
 }
